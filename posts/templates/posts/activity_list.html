@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Activity</h1>
+<ul>
+{% for activity in object_list %}
+    <hr>
+        <li>
+            Type  : {{ activity.activity_type }}<br>
+            Post ID  : <a href='{{ activity.get_absolute_url }}'>{{ activity.post_id }}</a><br>
+            Title  : {{ activity.post_title }}<br>
+            User ID :   {{ activity.user_id }}<br>
+            Username :   {{ activity.user_name }}<br>
+            Comment ID  : {{ activity.comment_id }}<br>
+            Comment  : {{ activity.comment }}<br>
+        </li>
+{% empty %}
+    <li>No activity yet.</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
