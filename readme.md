@@ -24,6 +24,12 @@ All the JSON data will be loaded to the DB.
 Then notifications related to each post will be available http://localhost:8000/posts/notifications/<post_id>/
 
 
+## Running the tests
+
+```
+$ python manage.py test
+```
+
 ## How to deploy
 
 The project can be hosted on any platform (AWS EC2, Gcloud, Heroku).
@@ -37,9 +43,3 @@ We can setup the WSGI application server and configure nginx.
 Once the configuration is done, restart nginx and start the WSGI server.
 
 We can access the project using the ip and port number.
-
-## Running the test
-
-```
-$ python manage.py test
-```
