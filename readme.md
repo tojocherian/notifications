@@ -38,3 +38,8 @@ Once the configuration is done, restart nginx and start the WSGI server.
 
 We can access the project using the ip and port number.
 
+## Running the test
+
+```
+$ python manage.py test
+```
